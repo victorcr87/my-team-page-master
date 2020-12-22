@@ -2,56 +2,73 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta h3="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Team Page</title>
     <link rel="icon" href="./imgs/devchallenges.png" />
+    <link rel="stylesheet" href="./scss/style.css" />
   </head>
   <body>
     <header>
       <h1 class="title">The creative crew</h1>
-      <h2 class="subtitle">Who we are</h2>
-      <p class="description">
-        We are team of creatively diverse. driven. innovative individuals
-        working in various locations from the world.
-      </p>
+      <div class="info">
+        <h2 class="subtitle">Who we are</h2>
+        <p class="description">
+          We are team of creatively diverse. driven. innovative individuals
+          working in various locations from the world.
+        </p>
+      </div>
     </header>
     <main>
-      <div class="picture">
-        <img src="" alt="" class="picture" />
-        <job></job>
-        <name></name>
+      <div class="card" style="grid-row: 1 / 4">
+        <img
+          src="./imgs/photo1.png"
+          alt="Bill Mahoney picture"
+          class="picture"
+        />
+        <h4 class="job">Product Owner</h4>
+        <h3 class="name">Bill Mahoney</h3>
       </div>
-      <div class="picture">
-        <img src="" alt="" class="picture" />
-        <job></job>
-        <name></name>
+      <div class="card" style="grid-row: 2 / 5">
+        <img
+          src="./imgs/photo2.png"
+          alt="Saba Cabrera picture"
+          class="picture"
+        />
+        <h4 class="job">Art director</h4>
+        <h3 class="name">Saba Cabrera</h3>
       </div>
-      <div class="picture">
-        <img src="" alt="" class="picture" />
-        <job></job>
-        <name></name>
+      <div class="card" style="grid-row: 1 / 4">
+        <img src="./imgs/photo3.png" alt="Shae Le picture" class="picture" />
+        <h4 class="job">Tech lead</h4>
+        <h3 class="name">Shae Le</h3>
       </div>
-      <div class="picture">
-        <img src="" alt="" class="picture" />
-        <job></job>
-        <name></name>
+      <div class="card" style="grid-row: 5 / 8">
+        <img src="./imgs/photo4.png" alt="Skyiah Lu picture" class="picture" />
+        <h4 class="job">UX designer</h4>
+        <h3 class="name">Skyiah Lu</h3>
       </div>
-      <div class="picture">
-        <img src="" alt="" class="picture" />
-        <job></job>
-        <name></name>
+      <div class="card" style="grid-row: 6 / 9">
+        <img
+          src="./imgs/photo5.png"
+          alt="Griff Richards picture"
+          class="picture"
+        />
+        <h4 class="job">Developer</h4>
+        <h3 class="name">Griff Richards</h3>
       </div>
-      <div class="picture">
-        <img src="" alt="" class="picture" />
-        <job></job>
-        <name></name>
+      <div class="card" style="grid-row: 5 / 8">
+        <img src="./imgs/photo6.png" alt="Stan Johns picture" class="picture" />
+        <h4 class="job">Developer</h4>
+        <h3 class="name">Stan Johns</h3>
       </div>
     </main>
     <footer>
-      Víctor C.R. @
-      <a href="www.devchallenges.io" class="devchallenges-link"
-        >DevChallenges.io</a
-      >
+      <p class="credits">
+        Víctor C.R. @
+        <a href="www.devchallenges.io" class="devchallenges-link"
+          >DevChallenges.io</a
+        >
+      </p>
     </footer>
   </body>
 </html>

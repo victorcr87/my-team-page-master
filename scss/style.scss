@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+@mixin mobile {
+  @media (max-width: 950px) {
+    @content;
+  }
+}
+html,
+body,
+* {
+  margin: 0;
+}
+h1,
+h4 {
+  font-family: "PT Serif", serif;
+}
+h2,
+h3,
+p {
+  font-family: "Poppins", sans-serif;
+}
+header,
+main,
+footer {
+  width: 932px;
+  margin: 0 auto;
+  @include mobile {
+    max-width: 90%;
+  }
+}
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+  }
+  .subtitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .description {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 400px;
+  }
+  @include mobile {
+    grid-template-columns: auto;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  .card {
+    position: relative;
+    @include mobile {
+      grid-row: auto !important;
+    }
+  }
+  img {
+    width: 238px;
+    @include mobile {
+      width: 140px;
+    }
+  }
+  .job {
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    position: relative;
+    top: -50%;
+    right: -30%;
+  }
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  @include mobile {
+    grid-template-rows: repeat(12, auto);
+    grid-template-columns: 50% 50%;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+  .credits {
+    color: #a9a9a9;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-weight: 14px;
+  }
+}

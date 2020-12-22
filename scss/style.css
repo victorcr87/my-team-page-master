@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+html,
+body,
+* {
+  margin: 0;
+}
+
+h1,
+h4 {
+  font-family: "PT Serif", serif;
+}
+
+h2,
+h3,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+header,
+main,
+footer {
+  width: 932px;
+  margin: 0 auto;
+}
+
+@media (max-width: 950px) {
+  header,
+  main,
+  footer {
+    max-width: 90%;
+  }
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+header .title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+}
+
+header .subtitle {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .description {
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 400px;
+}
+
+@media (max-width: 950px) {
+  header {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[8];
+      grid-template-rows: repeat(8, auto);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+}
+
+main .card {
+  position: relative;
+}
+
+@media (max-width: 950px) {
+  main .card {
+    grid-row: auto !important;
+  }
+}
+
+main img {
+  width: 238px;
+}
+
+@media (max-width: 950px) {
+  main img {
+    width: 140px;
+  }
+}
+
+main .job {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: relative;
+  top: -50%;
+  right: -30%;
+}
+
+main .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media (max-width: 950px) {
+  main {
+    -ms-grid-rows: (auto)[12];
+        grid-template-rows: repeat(12, auto);
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+footer {
+  margin-top: 100px;
+  text-align: center;
+}
+
+footer .credits {
+  color: #a9a9a9;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-weight: 14px;
+}
+/*# sourceMappingURL=style.css.map */
