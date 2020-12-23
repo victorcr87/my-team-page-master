@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/victorcr87/my-team-page-master/blob/master/Screenshot_2020-12-23%20My%20Team%20Page.jpg)
 
 ### Built With
 
