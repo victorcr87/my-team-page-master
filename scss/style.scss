@@ -31,8 +31,11 @@ footer {
 header {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-top: 10%;
+  margin-top: 7%;
   margin-bottom: 10%;
+  @include mobile {
+    grid-template-columns: auto;
+  }
   .title {
     font-size: 36px;
     font-weight: 700;
@@ -42,14 +45,14 @@ header {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: 600;
+    @include mobile {
+      margin-bottom: 50px;
+    }
   }
   .description {
     font-size: 18px;
     font-weight: 400;
     max-width: 400px;
-  }
-  @include mobile {
-    grid-template-columns: auto;
   }
 }
 
@@ -60,9 +63,7 @@ main {
   row-gap: 20px;
   .card {
     position: relative;
-    @include mobile {
-      grid-row: auto !important;
-    }
+    width: fit-content;
   }
   img {
     width: 238px;
@@ -76,16 +77,20 @@ main {
     text-transform: uppercase;
     transform: rotate(90deg);
     position: relative;
-    top: -50%;
-    right: -30%;
+    right: -55%;
+    top: -60%;
+    @include mobile {
+      top: -145px;
+    }
   }
   .name {
     font-size: 18px;
     font-weight: 600;
   }
   @include mobile {
-    grid-template-rows: repeat(12, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-columns: 50% 50%;
+    column-gap: 10px;
   }
 }
 
@@ -97,5 +102,13 @@ footer {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-weight: 14px;
+  }
+}
+@include mobile {
+  .card {
+    grid-row: auto !important;
+  }
+  .card:nth-child(2n) {
+    margin-top: 100px;
   }
 }

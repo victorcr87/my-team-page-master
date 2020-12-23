@@ -36,8 +36,15 @@ header {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  margin-top: 10%;
+  margin-top: 7%;
   margin-bottom: 10%;
+}
+
+@media (max-width: 950px) {
+  header {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
 }
 
 header .title {
@@ -52,17 +59,16 @@ header .subtitle {
   font-weight: 600;
 }
 
+@media (max-width: 950px) {
+  header .subtitle {
+    margin-bottom: 50px;
+  }
+}
+
 header .description {
   font-size: 18px;
   font-weight: 400;
   max-width: 400px;
-}
-
-@media (max-width: 950px) {
-  header {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
 }
 
 main {
@@ -77,12 +83,9 @@ main {
 
 main .card {
   position: relative;
-}
-
-@media (max-width: 950px) {
-  main .card {
-    grid-row: auto !important;
-  }
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 main img {
@@ -102,8 +105,14 @@ main .job {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   position: relative;
-  top: -50%;
-  right: -30%;
+  right: -55%;
+  top: -60%;
+}
+
+@media (max-width: 950px) {
+  main .job {
+    top: -145px;
+  }
 }
 
 main .name {
@@ -113,10 +122,12 @@ main .name {
 
 @media (max-width: 950px) {
   main {
-    -ms-grid-rows: (auto)[12];
-        grid-template-rows: repeat(12, auto);
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
   }
 }
 
@@ -130,5 +141,14 @@ footer .credits {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-weight: 14px;
+}
+
+@media (max-width: 950px) {
+  .card {
+    grid-row: auto !important;
+  }
+  .card:nth-child(2n) {
+    margin-top: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
